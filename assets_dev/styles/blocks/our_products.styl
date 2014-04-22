@@ -1,0 +1,80 @@
+.our_products
+	clearfix()
+	padding 0 0 36px
+
+	.content_block
+		&--header
+			padding 61px 0 0 0
+			margin 0 0 50px
+			h2
+				border-color #fff
+
+
+	&--list
+		clearfix()
+
+		&--item
+			background #fff
+			width 240px
+			float left
+			margin 0 0 0 13px
+			padding 0 0 25px
+			clearfix()
+			text-align center
+
+			figure
+				height 260px
+				line-height 260px
+
+				img
+					vertical-align middle
+
+			h3
+				font-size 22px
+				color $dark_blue
+				font-family 'Droid Sans Bold'
+				display block
+				margin -1px 0 9px
+
+				a
+					color $dark_blue
+					text-decoration none
+
+				a:hover
+					color #c629ff
+					text-decoration underline
+
+			p
+				color #8d95a1
+				font-size 14px
+				line-height 17px
+				margin 0 0 19px
+
+			strong
+				font-size 22px
+				color #d300c4
+				font-family 'Droid Sans Bold'
+
+		&--item:first-child
+		&--item:nth-child(4n+1)
+			margin 0
+
+
+	&--footer
+		padding 40px 0 0 0
+		clearfix()
+		text-align center
+
+		.cl-btn
+			box-shadow inset 0 2px 0 rgba(255, 255, 255, .72), 0 4px 0 #ba29ef
+
+		.cl-btn:active
+			top 4px
+			box-shadow inset 0 2px 0 rgba(255, 255, 255, .72)
+
+
+.our_products.m-products_page
+	padding 0 0 15px
+	.our_products--list
+		&--item
+			margin-bottom 13px

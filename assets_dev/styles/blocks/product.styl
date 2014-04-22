@@ -1,0 +1,136 @@
+.product
+	position relative
+	z-index 10
+	padding 0 0 50px
+	clearfix()
+
+	&--in
+		background #fff
+		clearfix()
+		padding 48px 40px 22px 48px
+		borderbox()
+
+
+	&--gallery
+		width 442px
+		height 472px
+		shadow(none)
+		float left
+		overflow hidden
+
+		img
+			width 442px
+			display block
+		// margin 0 50px 0 0
+
+		// slider styles
+
+		.bx-wrapper
+			margin 0
+		.bx-viewport
+			shadow(none)
+			border 0
+			left 0
+
+		.bx-controls
+			.bx-pager
+				&-item
+					a
+						width 14px
+						height 14px
+						radius(14px)
+						background #e6e6e6
+						margin 0 8px
+
+					a:hover
+					a.active
+						background $blue
+
+	&--info
+		overflow hidden
+		padding 7px 0 0 50px
+		font-size 18px
+		line-height 21px
+		h2
+			font-size 36px
+			line-height 1
+			margin 0 0 18px
+
+		p
+			margin 0 0 22px
+
+	&--characteristics
+		&--row
+			clearfix()
+			margin 9px 0 0
+
+		&--key
+			display block
+			float left
+			width 128px
+			overflow hidden
+			opacity .6
+			position relative
+			color #000
+
+			span
+				position relative
+				z-index 1
+				background #fff
+				padding 0 5px 0 0
+				
+
+			&:before
+				content'.......................................'
+				position absolute
+				bottom 0
+				width 100%
+
+		&--value
+			overflow hidden
+			padding 0 0 0 3px
+
+
+	&--footer
+		clearfix()
+		padding 33px 0 0 0
+
+	&--price
+		color #d300c4
+		font-family 'Droid Sans Bold'
+		font-size 30px
+		float left
+		margin 16px 22px 0 0
+
+
+
+.product.m-products_promo
+	padding 44px 20px 0 80px
+	.product--photo
+		width 340px
+		height 315px
+		overflow hidden
+		position relative
+		text-align center
+		line-height 315px
+		float left
+		margin 0 80px 0 0
+
+		img
+			min-width 340px
+
+	.product--info
+		padding 60px 0 0 0
+		line-height 22px
+
+		h2
+			margin 0 0 20px
+
+	
+		p
+			font-family 'Circe-Light'
+			opacity .6
+
+	.product--footer
+		padding 3px 0 0 0
+

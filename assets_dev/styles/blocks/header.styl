@@ -1,0 +1,80 @@
+.header
+	width 100%
+	font-family 'Droid Sans Bold'
+	text-transform uppercase
+	text-align center
+	position relative
+	z-index 10
+
+	&--in
+		padding 16px 0 14px
+
+
+	&--logo
+		display block
+		width 80px
+		height 80px
+		border 3px solid #000
+		
+		font-size 16px
+		line-height 14px
+		text-align center
+		text-decoration none
+		radius(80px)
+		text-transform uppercase
+		color #000
+		borderbox()
+		padding 25px 0 0 0
+
+	&--logo:hover
+		text-decoration none !important
+
+	&--nav
+		li
+			display inline-block
+			vertical-align middle
+			margin 0 25px
+
+		li.m-current
+			a
+				color $blue
+
+		a
+			text-decoration none
+			color #000
+			position relative
+
+		a:hover
+			text-decoration underline
+
+		.m-cart
+			// padding-right 37px
+
+			a
+				&:before
+					width 37px
+					height 20px
+					position absolute
+					top 0
+					right -37px
+					content ''
+				&:after
+					width 27px
+					height 20px
+					content ''
+					position absolute
+					right -37px
+					top -1px
+					header-cart-ico()
+
+
+body.m-inner
+	.header
+		&--in
+			border-bottom 1px solid rgba(0, 0, 0, .2)
+
+body.m-product
+body.m-game
+	.header
+		&--in
+			border 0 !important

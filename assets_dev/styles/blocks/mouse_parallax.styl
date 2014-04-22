@@ -1,0 +1,40 @@
+.mouse_parallax
+	position relative
+	height 427px
+	overflow hidden
+
+	.layer
+		position absolute
+		// z-index 12
+		// background: url('./assets/styles/i/sprite-paralax.png') center top no-repeat
+		background-color none  !important
+
+
+.mouse_parallax.m-puding
+	height 427px
+
+	.layer
+
+		img
+			
+			max-width 3365px !important
+			height 2709px !important
+			position absolute
+			left 50%
+			margin 0 0 0 -1682px
+
+		&.m-1
+			img
+				top -130px
+
+		&.m-2
+			img
+				top -728px
+
+		&.m-3
+			img
+				top -1445px
+
+		&.m-4
+			img
+				top -2190px

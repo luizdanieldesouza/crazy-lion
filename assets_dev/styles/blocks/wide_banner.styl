@@ -1,0 +1,63 @@
+.wide_banner
+	position relative
+	background #000
+	z-index 11
+
+	&--banner
+		// height 530px
+
+	&--links
+		width 100%
+		text-align center
+		position absolute
+		bottom -31px
+		li
+			display inline-block
+			margin 0 3px
+
+			a
+				display block
+				position relative
+				height 46px
+				padding 5px
+				background #fff
+				radius(9px)
+
+				span
+					display block
+					width 100%
+					height 100%
+					position relative
+
+					&:before
+						display block
+						content ''
+						position absolute
+						top 0
+						left 0
+						height 100%
+						width 100%
+
+			a:hover
+				background $blue
+
+		li.m-gplay a
+			width 155px
+
+			span:before
+				btn-gplay()
+
+		li.m-astore a
+			width 138px
+			span:before
+				btn-astore()
+
+		li.m-amazon a
+			width 175px
+			span:before
+				btn-amazon()
+
+
+.wide_banner + .content_block
+.wide_banner + .plan .content_block
+	padding-top 82px !important

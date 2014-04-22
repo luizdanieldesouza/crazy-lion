@@ -1,0 +1,103 @@
+.game
+	position relative
+	z-index 10
+	padding 100px 0 0 0
+
+	&--description
+		text-align center
+		width 760px
+		margin 0 auto 20px
+		h2
+			font-family 'Droid Sans'
+			font-size 48px
+			line-height 56px
+			margin 0 0 10px
+
+		p
+			font-size 18px
+			line-height 21px
+			margin 0 0 70px
+
+	&--gallery
+			
+		.bx-wrapper
+			margin 0
+		.bx-viewport
+			shadow(none)
+			border 0
+			left 0
+			background none
+
+		.bx-controls
+			// bottom 24px
+			.bx-controls-direction
+				.bx-prev
+				.bx-next
+					width 24px
+					height 43px
+					margin-top -21px
+				.bx-prev
+					products-promo-larr()
+					left -74px
+				.bx-next
+					products-promo-rarr()
+					right -74px
+				.bx-next:active
+				.bx-prev:active
+					margin-top -19px
+				.bx-prev:hover
+					promo-banner-prev()
+					left -74px
+				.bx-next:hover
+					promo-banner-next()
+					right -74px
+			.bx-pager
+				padding 0
+				bottom 24px
+				&-item
+					a
+						width 14px
+						height 14px
+						radius(14px)
+						background #fff
+						margin 0 8px
+						opacity .3
+						position relative
+
+					a:hover
+					a.active
+						opacity 1
+						background #fff
+
+				&-item:first-child
+					a
+						background none
+
+						&:before
+							display block
+							width 12px
+							height 14px
+							content ''
+							slider-nav-play()
+							position absolute
+							left 1px
+							top 0
+
+		&--slider
+			li
+				iframe
+				img
+					display block
+
+		&--video
+			position relative
+			&:before
+				display block
+				game-video-btn()
+				width 100px
+				height 100px
+				position absolute
+				top 50%
+				left 50%
+				margin -50px 0 0 -50px
+				content ''
