@@ -4,23 +4,17 @@ var gulp = require('gulp'),
 	livereload = require('gulp-livereload');
 
 gulp.task('stylus', function() {
-	gulp.src('assets_dev/styles/main.styl')
+	return gulp.src('assets_dev/styles/main.styl')
 		.pipe(stylus({
 			set: ['compress']
 		}))
-	.on('error', console.log)
-	.pipe(gulp.dest('./assets/styles/'));
-})
-
-gulp.task('default', function() {
-	
+		.on('error', console.log)
+		.pipe(gulp.dest('./assets/styles/'));
 });
 
 gulp.task('watch', function() {
-	// var server = livereload();
-	gulp.run('stylus');
-
-	watch({glob: 'assets_dev/styles/**/*.styl'}, function() {
-		gulp.run('stylus');
-	});
+	gulp.watch('assets_dev/styles/**/*.styl', ['stylus'])
 });
+
+gulp.task('default', ['stylus', 'watch']);
+
