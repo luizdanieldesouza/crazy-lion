@@ -1,0 +1,19 @@
+{
+  "name": "crazy-lion",
+  "version": "1.0.0",
+  "description": "crazy lion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "krekotun",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.6.0",
+    "gulp-stylus": "^0.1.0",
+    "gulp-watch": "^0.5.3",
+    "gulp-livereload": "^1.2.0",
+    "gulp-imagemin": "^0.2.0"
+  }
+}

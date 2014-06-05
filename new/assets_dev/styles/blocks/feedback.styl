@@ -1,0 +1,146 @@
+.feedback
+	height 600px
+	position relative
+	z-index 10
+
+	&--in
+		position relative
+
+	&--bg
+		position absolute
+		top 0
+		left 0
+
+	&--form
+		width 868px
+		height 435px
+		color #fff
+		position absolute
+		top 58px
+		left 182px
+
+		&--success
+			display none
+			text-align center
+			z-index 1
+			position relative
+			padding 140px 0 0 100px
+
+			em
+				font-family 'Droid Sans Bold'
+				font-size 38px
+				font-style normal
+				display block
+				// margin 0 0 10px
+
+			strong
+				font-family 'WisdomScriptAI'
+				font-size 40px
+				font-weight normal
+				letter-spacing -1px
+				display block
+				margin 0px 0 15px 0
+
+		fieldset
+			width 868px
+			height 435px
+			position relative
+			z-index 1
+
+		&--header
+			position absolute
+			top 99px
+			left 180px
+			strong
+				display block
+				font-family 'Droid Sans Bold'
+				font-size 27px
+				margin 0 0 8px
+				font-weight normal
+
+			i
+				font-family 'WisdomScriptAI'
+				font-size 25px
+				font-weight normal
+				font-style normal 
+
+		&--email_wrap
+			&
+				position absolute
+				top 109px
+				right 95px
+
+		&--email
+			ibreset()
+			background #fff
+			font-size 18px
+			font-family 'Circe-Regular'
+			radius(90px)
+			padding 12px 40px 11px 26px
+			width 266px
+			borderbox()
+
+			&::-webkit-input-placeholder
+				color #cccccc
+
+			&:-moz-placeholder
+				color #cccccc
+
+			&::-moz-placeholder
+				color #cccccc
+
+			&:-ms-input-placeholder
+				color #cccccc
+
+		&--text
+			width 595px
+			height 100px
+			padding 12px 26px 11px
+			background #fff
+			radius(28px)
+			borderbox()
+			position absolute
+			top 179px
+			left 179px
+			textarea
+				ibreset()
+				width 100%
+				height 77px
+				font-size 18px
+				font-family 'Circe-Regular'
+				resize none
+
+				&::-webkit-input-placeholder
+					color #cccccc
+
+				&:-moz-placeholder
+					color #cccccc
+
+				&::-moz-placeholder
+					color #cccccc
+
+				&:-ms-input-placeholder
+					color #cccccc
+
+
+		&--notification
+			font-size 18px
+			line-height 20px
+			font-family 'Circe-Regular'
+			color #fff
+			opacity .4
+			position absolute
+			left 176px
+			bottom 90px
+
+
+		&--submit
+			position absolute
+			right 97px
+			bottom 82px
+		
+
+		&--submit:active
+			bottom 78px
+			top auto
+			shadow(none)

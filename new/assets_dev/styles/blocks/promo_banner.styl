@@ -1,0 +1,120 @@
+.promo_banner
+	width 100%
+	// height 530px
+	position relative
+
+	&:after
+		content ''
+
+	&--slider
+		height 100%
+		&:after
+			background $yellow
+			opacity .95
+			height 134px
+			width 100%
+			position absolute
+			bottom 0
+			right 0
+			content ''
+			
+	&--slide
+		text-align center
+		color #000
+		// height 560px
+
+		&--content
+			z-index 1000
+			position absolute
+			width 100%
+			height 134px
+			bottom 0
+			left 0
+			padding 25px 0 0 0
+			borderbox()
+
+			h2
+				font-size 30px
+				font-family 'Droid Sans Bold'
+				margin 0 0 7px
+			p
+				font-size 18px
+				line-height 22px
+
+		&--bg
+			width 100%
+			height 530px
+			background url('/pic/promo_banner/slide.jpg') center top
+			position absolute
+			top 0
+			left 0
+
+	&--slide.m-h560
+		height 560px
+	// slider styles
+
+	.bx-viewport
+		shadow(none)
+		border 0
+		left 0
+
+	.bx-controls
+		height 0
+		width 100%
+		position absolute
+		bottom 0
+		right 0
+
+		&-direction
+			position relative
+			width 1000px
+			margin 0 auto
+			height 0
+		
+		.bx-prev
+			display block
+			width 24px
+			height 43px
+			cursor pointer
+			top -67px
+
+			&:before
+				display block
+				width 24px
+				height 43px
+				content ''
+				position absolute
+				top 0
+				left 0
+				promo-banner-prev()
+
+		.bx-prev:active
+			top -65px
+		
+		.bx-next
+			display block
+			width 24px
+			height 43px
+			cursor pointer
+			top -67px
+
+			&:before
+				display block
+				width 24px
+				height 43px
+				content ''
+				position absolute
+				top 0
+				left 0
+				promo-banner-next()
+
+		.bx-next:active
+			top -65px
+
+		.bx-next:hover
+			&:before
+				products-promo-rarr()
+
+		.bx-prev:hover
+			&:before
+				products-promo-larr()

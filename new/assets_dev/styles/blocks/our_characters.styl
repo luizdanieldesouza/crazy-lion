@@ -1,0 +1,137 @@
+.our_characters
+	clearfix()
+	padding 0 0 36px
+	position relative
+	z-index 10
+
+	.content_block
+		&--header
+			padding 61px 0 0 0
+			// margin 0 0 50px
+			h2
+				border-color #fff
+
+
+	&--list
+		clearfix()
+
+		&--item
+			width 325px
+			float left
+			margin 0 0 0 12px
+			text-align center
+
+			figure
+				height 320px
+				margin 0 0 30px
+
+			h3
+			p
+				margin 0 30px
+
+			h3
+				font-family 'Droid Sans Bold'
+				font-size 22px
+				margin-bottom 14px
+
+				a
+					color #fff
+					text-decoration none
+
+				a:hover
+					color $yellow
+					text-decoration underline
+			p
+				font-size 14px
+				line-height 17px
+				opacity .6
+
+		&--item:first-child
+		&--item:nth-child(3n+1)
+			margin 0
+
+	&--footer
+		padding 40px 0 0 0
+		clearfix()
+		text-align center
+
+		.cl-btn
+			box-shadow inset 0 2px 0 rgba(255, 255, 255, .72), 0 4px 0 #038ff2
+
+		.cl-btn:active
+			top 4px
+			box-shadow inset 0 2px 0 rgba(255, 255, 255, .72)
+
+
+.our_characters.m-page
+	.content_block--header
+		margin 0 0 45px
+		h2
+			border-color $dark_blue
+	.our_characters
+		&--list
+			&--item
+				margin-bottom 60px
+				a
+					color $dark_blue
+
+.our_characters.m-game_page
+	padding 18px 0 70px 0
+	.content_block--header h2
+		border-color $dark_blue
+		margin 0 0 35px
+
+	.our_characters
+		&--list
+			&--item
+				width 690px
+				clear both
+				float none
+				clearfix()
+				margin 0 auto -20px
+
+				figure
+					// float left
+					display inline-block
+					vertical-align middle
+					width 325px
+					margin 0
+
+				&--content
+					padding 30px 0 0 25px
+					display inline-block
+					width 325px
+					text-align left
+					vertical-align middle
+
+
+				h3
+					margin 0 0 14px
+					font-size 26px
+					a
+						color $dark_blue
+				
+				p
+					font-size 14px
+					line-height 17px
+					opacity 1
+					margin 0 0 14px
+
+				.cl-btn
+					padding 12px 25px 11px
+					font-size 13px
+
+				.cl-btn.m-yellow
+					background $yellow
+					box-shadow inset 0 2px 0 #fff, 0 4px 0 #cfc816
+
+			
+			&--item:nth-child(2n)
+				direction rtl
+					
+
+				.our_characters--list--item--content
+					direction ltr
+
+					footer
+						text-align right

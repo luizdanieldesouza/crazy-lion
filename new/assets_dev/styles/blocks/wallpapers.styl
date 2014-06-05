@@ -1,0 +1,86 @@
+.wallpapers
+	position relative
+	z-index 10
+	padding 43px 0 30px 0
+
+	.content_block--header
+		margin 0 0 30px
+
+	&--list
+		clearfix()
+
+		&--item
+			width 310px
+			height 320px
+			background #fff
+			float left
+			margin 0 0 35px 35px
+
+			figure
+				height 193px
+				overflow hidden
+
+				img
+					display block
+					max-width 100%
+
+			&--sizes
+				clearfix()
+				padding 0 10px
+
+				a
+					color $dark_blue
+					text-decoration none
+
+				li.m-active a
+				a:hover
+					color #dd0024
+				
+				&--nav
+					border-bottom 1px solid #cccccc
+					font-family 'Droid Sans'
+					font-size 18px
+					text-align center
+
+					li
+						display inline-block
+						padding 24px 12px 18px
+						position relative
+
+						&:before
+							display none
+							width 19px
+							height 10px
+							sizes-nav()
+							content ''
+							position absolute
+							left 50%
+							bottom -1px
+							margin 0 0 0 -10px
+
+
+					li.m-active
+						&:before
+							display block
+						
+
+
+				&--list
+					clearfix()
+					font-size 12px
+					opacity .6
+					padding 16px 0 0 4px
+					li
+						float left
+						width 74px
+						padding 3px 0
+
+						a
+							text-decoration none
+
+					li:nth-child(4n+4)
+						width 62px
+
+		&--item:nth-child(3n+1)
+			margin-left 0
+	
